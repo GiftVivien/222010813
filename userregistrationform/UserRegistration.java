@@ -159,7 +159,7 @@ public class UserRegistration extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
      
        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/registration", "root", "")) {
-            pst = conn.prepareStatement("INSERT INTO your_table_name (firstname, lastname, email, gender, phonenumber, address, username, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+            pst = conn.prepareStatement("INSERT INTO registration_table (firstname, lastname, email, gender, phonenumber, address, username, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
 
 
         
